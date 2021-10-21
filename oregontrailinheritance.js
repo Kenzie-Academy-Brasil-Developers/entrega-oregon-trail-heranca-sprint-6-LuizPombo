@@ -60,7 +60,7 @@ class Hunter extends Traveler {
     }
 
     giveFood(traveler, numOfFoodUnits) {
-        if(numOfFoodUnits < this._food) {
+        if(numOfFoodUnits <= this._food) {
             this._food -= numOfFoodUnits
             traveler.food += numOfFoodUnits
         }
